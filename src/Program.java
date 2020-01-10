@@ -1,4 +1,8 @@
+import client.Client;
+
 import java.util.Scanner;
+
+import server.Server;
 
 public class Program {
     public static void main(String[] args) {

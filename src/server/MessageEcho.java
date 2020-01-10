@@ -1,27 +1,19 @@
-class Server {
-    private String message;
+package server;
 
-    void setMessage(String message) {
-        this.message = message;
-    }
-
-    String getAnswer() {
-        return message;
-    }
-
-    void run() {
+class MessageEcho {
+    String run(String message) {
         switch (message) {
             case "Hello":
                 message = "Dummy message";
-                return;
+                return message;
             case "How are you?":
                 message = "How DARE you!";
-                return;
+                return message;
             case "Let's kill Python?":
                 message = "SURE!";
-                return;
+                return message;
         }
-
         message = "Nah, you're boring. Try again!";
+        return message;
     }
 }

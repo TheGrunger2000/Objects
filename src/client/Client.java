@@ -1,22 +1,26 @@
-class Client {
+package client;
+
+import server.Server;
+
+public class Client {
 
     private Server server;
     private String message;
 
 
-    void setServer(Server server) {
+    public void setServer(Server server) {
         this.server = server;
     }
 
-    void printMessage() {
+    public void printMessage() {
         System.out.println(this.message);
     }
 
-    void setMessage(String message) {
+    public void setMessage(String message) {
         this.message = message;
     }
 
-    void run() {
+    public void run() {
         server.setMessage(message);
         server.run();
         this.message = server.getAnswer();
