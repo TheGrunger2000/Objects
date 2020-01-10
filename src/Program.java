@@ -25,9 +25,9 @@ public class Program {
                 System.out.println("Wanna do it some more? (y/n)\n>> ");
                 String answer = scanner.nextLine();
 
-                if (answer.equals("Y") | answer.equals("y")) break;
+                if (answer.toLowerCase().equals("y")) break;
 
-                if (answer.equals("N") | answer.equals("n")) {
+                if (answer.toLowerCase().equals("n")) {
                     a = false;
                     break;
                 }
